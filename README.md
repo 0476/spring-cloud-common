@@ -20,14 +20,10 @@
 
 该项目包含 8 个服务
 
-* registry - 服务注册与发现
-* config - 外部配置
-* monitor - 监控
-* zipkin - 分布式跟踪
-* gateway - 代理所有微服务的接口网关
-* auth-service - OAuth2 认证服务
-* svca-service - 业务服务A
-* svcb-service - 业务服务B
+* service-registry-center - 服务注册与发现
+* service-config-center - 外部配置
+* service-monitor - 监控
+* service-zipkin - 分布式跟踪
 
 ## 体系架构
 ![architecture](/screenshots/architecture.jpg)

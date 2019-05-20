@@ -1,18 +1,18 @@
 version: '2'
 services:
   registry:
-    image: spring-boot-cloud/registry-center
+    image: spring-boot-cloud/service-registry-center
     ports:
       - "8761:8761"
   config:
-    image: spring-boot-cloud/config-center
+    image: spring-boot-cloud/service-config-center
     ports:
       - "8888:8888"
   monitor:
-    image: spring-boot-cloud/monitor-center
+    image: spring-boot-cloud/service-monitor
     ports:
       - "8040:8040"
   zipkin:
-    image: spring-boot-cloud/zipkin-center
+    image: spring-boot-cloud/service-zipkin
     ports:
       - "9411:9411"

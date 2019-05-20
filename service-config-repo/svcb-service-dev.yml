@@ -12,9 +12,17 @@ eureka:
       user.password: ${security.user.password}
 #安全配置
 security:
+  ignored: /css/**,/js/**,/images/**,/webjars/**,/**/favicon.ico,/static/**,/api/swagger-ui.html,/swagger-ui.html,/v2/api-docs, /configuration/ui,/swagger-resources
+  user:
+    name: user
+    password: password
   oauth2:
     client:
-      clientId: svcb-service
+      clientId: svca-service
+      clientSecret: ${security.user.password}
+      accessTokenUri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/oauth/token
+      grant-type: client_credentials
+      scope: server
 #swagger接口配置
 swagger:
   base-package: com.ailikes.svcb

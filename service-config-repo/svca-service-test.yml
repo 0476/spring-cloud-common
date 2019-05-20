@@ -1,9 +1,9 @@
 server:
-  port: 8070
+  port: 8080
 var:
-  env: dev
-  name: svcb-service
-  msg: This service SVCB-SERVICE in dev
+  env: test
+  name: svca-service
+  msg: This service SVCA-SERVICE in test
 #注册中心配置
 eureka:
   instance:
@@ -18,11 +18,12 @@ security:
     password: password
   oauth2:
     client:
-      clientId: svcb-service
+      clientId: svca-service
       clientSecret: ${security.user.password}
       accessTokenUri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/oauth/token
       grant-type: client_credentials
       scope: server
 #swagger接口配置
 swagger:
-  base-package: com.ailikes.svcb
+  base-package: com.ailikes.svca
+

@@ -1,7 +1,9 @@
 server:
   port: 8080
-
-name: ailikes
+var:
+  env: dev
+  name: svca-service
+  msg: This service SVCA-SERVICE in dev
 #注册中心配置
 eureka:
   instance:

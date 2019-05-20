@@ -2,9 +2,9 @@ server:
   context-path: /uaa
   port: 5000
 var:
-  env: dev
+  env: test
   name: auth-service
-  msg: This service AUTH-SERVICE in dev
+  msg: This service AUTH-SERVICE in test
 management:
   security:
     enabled: false

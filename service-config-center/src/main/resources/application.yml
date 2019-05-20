@@ -11,6 +11,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@registry.junxinweike.club:8761/eureka/
+      register-with-eureka: true
+      fetch-registry: true
 #配置中心
 spring:
   cloud:

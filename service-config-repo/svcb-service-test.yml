@@ -1,9 +1,9 @@
 server:
   port: 8070
 var:
-  env: dev
+  env: test
   name: svcb-service
-  msg: This service SVCB-SERVICE in dev
+  msg: This service SVCB-SERVICE in test
 #注册中心配置
 eureka:
   instance:

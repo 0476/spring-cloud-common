@@ -1,9 +1,9 @@
 server:
   port: 8060
 var:
-  env: dev
+  env: test
   name: gateway
-  msg: This service GATEWAY in dev
+  msg: This service GATEWAY in test
 management:
   security:
     enabled: false

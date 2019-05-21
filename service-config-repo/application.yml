@@ -34,17 +34,4 @@ authserver:
     hostname: auth-service
     port: 5000
     contextPath: /uaa
-#安全配置
-security:
-  ignored: /css/**,/js/**,/images/**,/webjars/**,/**/favicon.ico,/static/**,/api/swagger-ui.html,/swagger-ui.html,/v2/api-docs, /configuration/ui,/swagger-resources
-  user:
-    name: user
-    password: password
-  oauth2:
-    resource:
-      user-info-uri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/current
-  client:
-    clientSecret: ${security.user.password}
-    accessTokenUri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/oauth/token
-    grant-type: client_credentials
-    scope: server
+    ignored: /css/**,/js/**,/images/**,/webjars/**,/**/favicon.ico,/static/**,/api/swagger-ui.html,/swagger-ui.html,/v2/api-docs,/configuration/ui,/swagger-resources

@@ -32,6 +32,8 @@ spring:
     initial-size: 5
   jpa:
     show-sql: true
+  thymeleaf:
+    prefix: classpath:/templates/
 #mybatis
 mybatis-plus:
   mapper-locations: classpath:/mapper/jjzx/*.xml

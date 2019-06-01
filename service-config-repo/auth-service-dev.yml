@@ -32,8 +32,17 @@ spring:
     initial-size: 5
   jpa:
     show-sql: true
-  thymeleaf:
-    prefix: classpath:/templates/
+# thymeleaf:
+#   prefix: classpath:/templates/
+  freemarker: 
+    suffix: .html # 设置模板后缀名 
+    content-type: text/html # 设置文档类型 
+    charset: UTF-8                               # 设置页面编码格式 
+    cache: false                                 # 设置页面缓存 
+    template-loader-path: classpath:/templates # 设置ftl文件路径 
+    mvc: 
+      static-path-pattern: /static # 设置静态文件路径，js,css等
+
 #mybatis
 mybatis-plus:
   mapper-locations: classpath:/mapper/jjzx/*.xml

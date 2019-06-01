@@ -26,4 +26,7 @@ security:
 #swagger接口配置
 swagger:
   base-package: com.ailikes.svca
+spring:
+  main:
+    allow-bean-definition-overriding: true
 

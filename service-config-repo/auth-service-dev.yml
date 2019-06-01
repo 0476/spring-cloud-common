@@ -22,7 +22,7 @@ security:
 #数据源配置
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/jiajiaozaixian_dev?useSSL=false
+    url: jdbc:mysql://111.207.248.45:3306/jiajiaozaixian_dev?useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: jiuaiNI0523
@@ -36,7 +36,7 @@ spring:
 mybatis-plus:
   mapper-locations: classpath:/mapper/jjzx/*.xml
   #实体扫描，多个package用逗号或者分号分隔
-  type-aliases-package:  com.ailikes.jjzx.entity
+  type-aliases-package:  com.ailikes.auth.jjzx.entity
   #typeEnumsPackage: com.baomidou.springboot.entity.enums
   global-config:
     #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";

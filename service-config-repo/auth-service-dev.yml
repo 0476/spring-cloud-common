@@ -1,6 +1,7 @@
 server:
-  context-path: /uaa
+  host: 127.0.0.1
   port: 5000
+  context-path: /uaa
 var:
   env: dev
   name: auth-service
